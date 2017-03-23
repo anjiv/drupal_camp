@@ -1,0 +1,92 @@
+#block-internship2017-sessionbanner{
+  h1{
+    letter-spacing: 6px;
+    margin-left: 50px;
+    position: absolute;
+    top: 330px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  a{
+    position: absolute;
+    display: inline-block;
+    height: 5px;
+    line-height: 6px;
+    width: 140px;
+    background-color: #ec0342 ;
+    color: white;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    font-size: 16px;
+    text-decoration:none;
+    left: 50px;
+    top: 400px;
+  }
+}
+#block-internship2017-content{
+  p{
+    color: gray;
+    width: 60%;
+    text-align: center;
+    padding-left: 300px;
+    padding-right: 100px;
+  }
+  p:first-child{
+   width: initial;
+   text-transform: uppercase;
+   text-align: center;
+   font-size: 25px;
+   color: #0074bd ;
+   padding-left: 50px;
+   padding-top: 20px;
+ }
+ #tags{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 80%;
+  margin:20px auto;
+  a{
+   display: inline-block;
+   height: 5px;
+   line-height: 6px;
+   width: 20%;
+   background-color: #ec0342 ;
+   color: white;
+   border-radius: 5px;
+   padding: 17px;
+   text-align: center;
+   font-size: 16px;
+   text-decoration:none;
+   margin-top: 30px;
+ }
+}
+}
+#committee{
+  h2 {
+   width: initial;
+   text-transform: uppercase;
+   text-align: center;
+   font-size: 25px;
+   color: #0074bd ;
+   padding-left: 50px;
+   padding-top: 20px;
+ }
+ p{
+  color: gray;
+  width: 60%;
+  text-align: center;
+  padding-left: 300px;
+  padding-right: 100px;
+}
+img {
+  height: 250px;
+  width: 250px;
+}
+#committee-info{
+  display: flex;
+  justify-content: space-between;
+}
+}

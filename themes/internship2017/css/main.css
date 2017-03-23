@@ -1,0 +1,325 @@
+.header li {
+  display: inline;
+  text-transform: uppercase; }
+
+.header li a {
+  color: black;
+  margin-left: 140px;
+  text-decoration: none; }
+
+.header li a:active {
+  border-bottom: 3px solid #000;
+  border-width: 3px;
+  width: 40%; }
+
+.image-style-banner {
+  width: 1440px;
+  height: 500px; }
+
+.menu a:active {
+  border-bottom: 3px solid #fff; }
+
+#ticket1 {
+  padding-top: 48px;
+  padding-left: 330px; }
+
+#ticket2 {
+  padding-left: 360px;
+  padding-top: 18px; }
+
+#ticket2 a {
+  text-decoration: none;
+  padding: 15px 20px 15px 20px;
+  background-color: #e00000;
+  color: white; }
+
+#ticket3 {
+  padding-left: 825px;
+  margin-top: -100px; }
+
+#ticket4 {
+  padding-left: 900px;
+  margin-top: 50px; }
+
+#ticket4 a {
+  text-decoration: none;
+  padding: 15px 20px 15px 20px;
+  background-color: #e00000;
+  color: white; }
+
+#wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #f7f9fb; }
+
+#keynote-speaker {
+  font-size: 15px;
+  line-height: 20px;
+  color: grey;
+  width: 55%; }
+
+#keynote-content {
+  width: 50%;
+  padding-left: 200px;
+  padding-top: 80px; }
+
+#keynote-content h1 {
+  font-size: 22px;
+  color: #0074bd;
+  text-transform: uppercase;
+  font-weight: bold; }
+
+#keynote-info {
+  width: 50%;
+  padding-left: 200px;
+  padding-top: 80px;
+  padding-top: 60px;
+  padding-bottom: 60px; }
+
+#keynote-image {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #f7f9fb;
+  width: 45%; }
+
+#event h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 30px;
+  color: #0074bd;
+  padding-top: 50px; }
+
+#event #event-wrap {
+  display: flex;
+  justify-content: center;
+  padding: 80px; }
+  #event #event-wrap h2 {
+    text-transform: uppercase;
+    padding-top: 30px;
+    font-size: 20px;
+    color: #0074bd; }
+  #event #event-wrap p {
+    padding-top: 20px;
+    padding-right: 15px;
+    color: grey; }
+  #event #event-wrap img {
+    height: 250px;
+    width: 380px;
+    padding-right: 50px; }
+
+#block-views-block-our-sponsors-block-1 {
+  width: 80%;
+  margin: 0 auto; }
+  #block-views-block-our-sponsors-block-1 h2 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 30px;
+    color: #0074bd; }
+  #block-views-block-our-sponsors-block-1 .view-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+  #block-views-block-our-sponsors-block-1 .views-row {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+
+#block {
+  padding-bottom: 50px; }
+  #block h2 {
+    text-align: center;
+    font-size: 20px;
+    color: grey;
+    padding-top: 25px;
+    padding-bottom: 25px; }
+  #block #block-button {
+    text-align: center; }
+    #block #block-button a {
+      display: inline-block;
+      height: 5px;
+      line-height: 6px;
+      width: 140px;
+      background-color: #ec0342;
+      color: white;
+      border-radius: 5px;
+      padding: 20px;
+      text-align: center;
+      font-size: 16px;
+      text-decoration: none; }
+
+.header li {
+  margin: 10px; }
+
+#venue-block {
+  margin: 0 auto;
+  background: #fbfcff;
+  padding-bottom: 50px; }
+  #venue-block h2 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 30px;
+    color: #0074bd;
+    padding-left: 50px;
+    padding-top: 10px;
+    padding-bottom: 80px; }
+  #venue-block #venue-info {
+    display: flex;
+    justify-content: center; }
+  #venue-block #venue-image {
+    padding-left: 250px;
+    margin-top: -80px; }
+  #venue-block #venue-content {
+    padding-left: 50px;
+    margin-top: -50px; }
+
+#contact-block {
+  margin: 0 auto; }
+  #contact-block h2 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 30px;
+    color: #0074bd;
+    padding-left: 50px;
+    padding-top: 10px; }
+  #contact-block #contact-content h3 {
+    padding-left: 500px; }
+
+#block-majorattractions h2 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 30px;
+  color: #0074bd;
+  padding-left: 50px;
+  padding-top: 10px; }
+
+#block-majorattractions ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+
+#block-majorattractions li {
+  list-style: none;
+  width: 20%; }
+  #block-majorattractions li img {
+    width: 290px;
+    height: 220px; }
+
+#block-majorattractions li p {
+  color: #0074bd; }
+
+#sponsors h2 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 30px;
+  color: #0074bd;
+  padding-left: 50px;
+  padding-top: 20px; }
+
+#sponsors #sponsors-info {
+  display: flex;
+  justify-content: space-around;
+  padding: 0px 50px;
+  color: grey; }
+  #sponsors #sponsors-info p {
+    text-transform: uppercase;
+    color: black;
+    padding-bottom: 20px;
+    line-height: 20px;
+    color: grey; }
+  #sponsors #sponsors-info p:first-child {
+    font-size: 18px;
+    font-weight: 800;
+    border-bottom: 2px solid black;
+    padding: 20px 0px;
+    color: black; }
+
+#sponsors #sponsors-content1, #sponsors #sponsors-content2, #sponsors #sponsors-content3 {
+  width: 30%; }
+
+#block-internship2017-sessionbanner h1 {
+  letter-spacing: 6px;
+  margin-left: 50px;
+  position: absolute;
+  top: 330px;
+  color: white;
+  text-decoration: none;
+  font-size: 20px; }
+
+#block-internship2017-sessionbanner a {
+  position: absolute;
+  display: inline-block;
+  height: 5px;
+  line-height: 6px;
+  width: 140px;
+  background-color: #ec0342;
+  color: white;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  font-size: 16px;
+  text-decoration: none;
+  left: 50px;
+  top: 400px; }
+
+#block-internship2017-content p {
+  color: gray;
+  width: 60%;
+  text-align: center;
+  padding-left: 300px;
+  padding-right: 100px; }
+
+#block-internship2017-content p:first-child {
+  width: initial;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 25px;
+  color: #0074bd;
+  padding-left: 50px;
+  padding-top: 20px; }
+
+#block-internship2017-content #tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 80%;
+  margin: 20px auto; }
+  #block-internship2017-content #tags a {
+    display: inline-block;
+    height: 5px;
+    line-height: 6px;
+    width: 20%;
+    background-color: #ec0342;
+    color: white;
+    border-radius: 5px;
+    padding: 17px;
+    text-align: center;
+    font-size: 16px;
+    text-decoration: none;
+    margin-top: 30px; }
+
+#committee h2 {
+  width: initial;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 25px;
+  color: #0074bd;
+  padding-left: 50px;
+  padding-top: 20px; }
+
+#committee p {
+  color: gray;
+  width: 60%;
+  text-align: center;
+  padding-left: 300px;
+  padding-right: 100px; }
+
+#committee img {
+  height: 250px;
+  width: 250px; }
+
+#committee #committee-info {
+  display: flex;
+  justify-content: space-between; }

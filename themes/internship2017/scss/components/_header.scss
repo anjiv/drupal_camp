@@ -1,0 +1,21 @@
+.header li{
+  display:inline;
+  text-transform:uppercase;
+}
+.header li a{
+  color:black;
+  margin-left:140px;
+  text-decoration: none;
+}
+.header li a:active {
+  border-bottom:3px solid #000;
+  border-width: 3px;
+  width:40%;
+}
+.image-style-banner{
+  width:1440px;
+  height:500px;
+}
+.menu a:active{
+  border-bottom:3px solid #fff;
+}

@@ -1,0 +1,10 @@
+node_modules
+.sass-cache
+vendor
+sites/*/settings*.php
+sites/*/services*.yml
+sites/*/files
+sites/*/private
+sites/simpletest
+core/phpcs.xml
+core/phpunit.xml
