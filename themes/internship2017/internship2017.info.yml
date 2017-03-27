@@ -8,6 +8,7 @@ libraries:
   - internship2017/global-styling
 
 regions:
+  header_top: 'Header Top'
   header: Header
   header_bottom: 'Header Bottom'
   content: 'Content'

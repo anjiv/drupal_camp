@@ -1,0 +1,24 @@
+{
+  "name": "internship2017",
+  "description": "CONTENTS OF THIS FILE ---------------------",
+  "main": "index.js",
+  "authors": [
+    "Anjali vijay <anjali.vijay@qed42.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/anjiv/drupal_camp",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "breakpoint-sass": "^2.7.1"
+  },
+  "devDependencies": {
+    "breakpoint-sass": "^2.7.1"
+  }
+}

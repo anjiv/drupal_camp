@@ -1,5 +1,6 @@
 var gulp = require('gulp');
 var scss = require('gulp-sass');
+var compass = require('gulp-compass');
 var browserSync = require('browser-sync').create();
 var imagemin = require('gulp-imagemin');
 
@@ -12,6 +13,17 @@ gulp.task('scss', function(){
      stream: true
    }))
 });
+
+gulp.task('compass', function(){
+  return gulp.src('scss/**/*.scss')
+    .pipe(compass({
+      config_file: './config.rb',
+      css: 'css',
+      sass: 'scss'
+    }))
+    .pipe(gulp.dest('css'));
+});
+
 
 
 gulp.task('browserSync', function() {
@@ -28,8 +40,8 @@ gulp.task('browserSync', function() {
 });
 
 
-gulp.task('watch', ['browserSync','scss'], function (){
- gulp.watch('scss/**/*.scss', ['scss']);
+gulp.task('watch', ['browserSync','compass'], function (){
+ gulp.watch('scss/**/*.scss', ['compass']);
  // Other watchers
 });
 
