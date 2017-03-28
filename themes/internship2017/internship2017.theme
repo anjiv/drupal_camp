@@ -1,7 +1,12 @@
+<?php
 /**
  * Implements hook_theme_suggestions_page_alter().
  */
- <?php
+function internship2017_preprocess_menu__main(&$variables) {
+  // kint($variables['items']);
+  $variables['logopath'] = '/' . drupal_get_path('theme','internship2017') . '/logo.png';
+}
+
 function internship2017_theme_suggestions_page_alter(array &$suggestions, array $variables) {
   if ($node = \Drupal::routeMatch()->getParameter('node')) {
     $content_type = $node->bundle();

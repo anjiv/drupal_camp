@@ -10,6 +10,7 @@ $mobile-1:650px 749px;
 $mobile-2:0px 649px;
 $desktop: 1000px 1280px;
 $all:0px 1400px;
+
 @import 'components/header';
 @import 'pages/homepage';
 @import 'components/layout';
@@ -17,4 +18,5 @@ $all:0px 1400px;
 @import 'pages/sponsors';
 @import 'pages/sessions';
 @import 'components/banner';
-@import 'pages/about'
+@import 'pages/about';
+@import 'components/footer';

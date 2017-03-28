@@ -1,17 +1,17 @@
-.header li{
-  display:inline;
-  text-transform:uppercase;
+.header li {
+    display: inline;
+    text-transform: uppercase;
 }
-.header li a{
-  color:black;
-  margin-left:140px;
-  text-decoration: none;
+
+.header li a {
+    color: black;
+    margin-left: 80px;
+    text-decoration: none;
 }
-.header li a:active {
-  border-bottom:3px solid #000;
-  border-width: 3px;
-  width:40%;
+
+.header li a.is-active{
+    border-bottom: 3px solid red;
+    border-width: 3px;
+    width: 40%;
 }
-.menu a:active{
-  border-bottom:3px solid #fff;
-}
+

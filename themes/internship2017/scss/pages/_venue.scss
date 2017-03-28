@@ -1,69 +1,70 @@
-#venue-block{
-  margin: 0 auto;
-  background: #fbfcff;
-  padding-bottom: 50px;
-  h2{
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 30px;
-    color: #0074bd ;
-    padding-left: 50px;
-    padding-top: 10px;
-    padding-bottom: 80px;
-  }
-  #venue-info{
-    display: flex;
-    justify-content: center;
-  }
-  #venue-image{
-    padding-left: 250px;
-    margin-top: -80px;
-  }
-  #venue-content{
-    padding-left: 50px;
-    margin-top: -50px;
-  }
-}
-#contact-block{
- margin: 0 auto;
- h2{
-  text-transform: uppercase;
-  text-align: center;
-  font-size: 30px;
-  color: #0074bd ;
-  padding-left: 50px;
-  padding-top: 10px;
-}
-#contact-content{
-  h3{
-    padding-left: 500px;
-  }
-}
-}
-#block-majorattractions{
-  h2{
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 30px;
-    color: #0074bd ;
-    padding-left: 50px;
-    padding-top: 10px;
-  }
-  ul{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-  li {
-    list-style: none;
-    width: 20%;
-    img{
-      width: 290px;
-      height: 220px;
+#venue-block {
+    margin: 0 auto;
+    background: #fbfcff;
+    padding-bottom: 50px;
+    h2 {
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 30px;
+        color: #0074bd;
+        padding-left: 50px;
+        padding-top: 10px;
+        padding-bottom: 80px;
     }
-  }
-  li p{
-    color: #0074bd ;
-  }
+    #venue-info {
+        display: flex;
+        justify-content: center;
+    }
+    #venue-image {
+        padding-left: 250px;
+        margin-top: -80px;
+    }
+    #venue-content {
+        padding-left: 50px;
+        margin-top: -50px;
+    }
 }
 
+#contact-block {
+    margin: 0 auto;
+    h2 {
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 30px;
+        color: #0074bd;
+        padding-left: 50px;
+        padding-top: 10px;
+    }
+    #contact-content {
+        h3 {
+            padding-left: 500px;
+        }
+    }
+}
+
+#block-majorattractions {
+    h2 {
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 30px;
+        color: #0074bd;
+        padding-left: 50px;
+        padding-top: 10px;
+    }
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    li {
+        list-style: none;
+        width: 20%;
+        img {
+            width: 290px;
+            height: 220px;
+        }
+    }
+    li p {
+        color: #0074bd;
+    }
+}

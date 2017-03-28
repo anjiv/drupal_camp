@@ -4,4 +4,6 @@ global-styling:
     base:
       css/main.css: {}
   js:
-      js/main.js: {}
+      js/scripts.js: {}
+  dependencies:
+    - core/jquery

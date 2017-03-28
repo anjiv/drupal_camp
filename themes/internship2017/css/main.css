@@ -5,18 +5,14 @@
 
 .header li a {
   color: black;
-  margin-left: 140px;
+  margin-left: 80px;
   text-decoration: none;
 }
 
-.header li a:active {
-  border-bottom: 3px solid #000;
+.header li a.is-active {
+  border-bottom: 3px solid red;
   border-width: 3px;
   width: 40%;
-}
-
-.menu a:active {
-  border-bottom: 3px solid #fff;
 }
 
 #ticket1 {
@@ -71,6 +67,24 @@
   width: 50%;
   padding-left: 200px;
   padding-top: 80px;
+}
+@media (min-width: 750px) and (max-width: 960px) {
+  #keynote-content {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 650px) and (max-width: 749px) {
+  #keynote-content {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 0px) and (max-width: 649px) {
+  #keynote-content {
+    width: 50%;
+    margin: 0 auto;
+  }
 }
 
 #keynote-content h1 {
@@ -277,7 +291,9 @@
   padding: 20px 0px;
   color: black;
 }
-#sponsors #sponsors-content1, #sponsors #sponsors-content2, #sponsors #sponsors-content3 {
+#sponsors #sponsors-content1,
+#sponsors #sponsors-content2,
+#sponsors #sponsors-content3 {
   width: 30%;
 }
 
@@ -310,7 +326,7 @@
 #block-internship2017-content p {
   color: gray;
   width: 60%;
-  text-align: center;
+  text-align: left;
   padding-left: 300px;
   padding-right: 100px;
 }
@@ -322,6 +338,20 @@
   color: #0074bd;
   padding-left: 50px;
   padding-top: 20px;
+}
+@media (min-width: 321px) and (max-width: 640px) {
+  #block-internship2017-content h1 {
+    font-size: 20px;
+    padding-bottom: 30px;
+    padding-top: 10px;
+  }
+}
+@media (min-width: 0px) and (max-width: 320px) {
+  #block-internship2017-content h1 {
+    font-size: 18px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+  }
 }
 #block-internship2017-content #tags {
   display: flex;
@@ -416,6 +446,20 @@
   padding-left: 50px;
   padding-top: 20px;
 }
+@media (min-width: 321px) and (max-width: 640px) {
+  #camp-block1 h2 {
+    font-size: 23px;
+    padding-bottom: 30px;
+    padding-top: 35px;
+  }
+}
+@media (min-width: 0px) and (max-width: 320px) {
+  #camp-block1 h2 {
+    font-size: 20px;
+    padding-bottom: 20px;
+    padding-top: 30px;
+  }
+}
 #camp-block1 p {
   width: 40%;
   margin: 0 auto;
@@ -445,6 +489,32 @@
   width: 380px;
   padding-right: 35px;
 }
+@media (min-width: 639px) and (max-width: 824px) {
+  #camp-block2 {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 0px) and (max-width: 649px) {
+  #camp-block2 {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 321px) and (max-width: 640px) {
+  #camp-block2 {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    padding-top: 10px;
+  }
+}
+@media (min-width: 0px) and (max-width: 320px) {
+  #camp-block2 {
+    padding: 0px;
+    padding-top: 10px;
+  }
+}
 
 #block-codeofconduct {
   display: flex;
@@ -466,6 +536,20 @@
   text-decoration: none;
   margin-top: 30px;
 }
+@media (min-width: 321px) and (max-width: 640px) {
+  #block-codeofconduct a {
+    width: 110px;
+    padding: 18px;
+    font-size: 14px;
+  }
+}
+@media (min-width: 0px) and (max-width: 320px) {
+  #block-codeofconduct a {
+    width: 100px;
+    font-size: 12px;
+    padding: 16px;
+  }
+}
 
 #installation {
   background-color: #f7f9fb;
@@ -478,11 +562,13 @@
   margin: 0 auto;
   padding: 20px;
 }
-#installation #content-wrapper #content-block1, #installation #content-wrapper #content-block2 {
+#installation #content-wrapper #content-block1,
+#installation #content-wrapper #content-block2 {
   color: grey;
   padding: 20px;
 }
-#installation #content-wrapper #content-block1 h4, #installation #content-wrapper #content-block2 h4 {
+#installation #content-wrapper #content-block1 h4,
+#installation #content-wrapper #content-block2 h4 {
   text-transform: uppercase;
   text-align: center;
   font-size: 16px;
@@ -490,8 +576,54 @@
   height: 30px;
   padding-bottom: 20px;
 }
-#installation #content-wrapper #content-block1 p, #installation #content-wrapper #content-block2 p {
+#installation #content-wrapper #content-block1 p,
+#installation #content-wrapper #content-block2 p {
   background-color: white;
   padding: 30px;
   box-shadow: 2px 2px 2px;
+}
+@media (min-width: 639px) and (max-width: 824px) {
+  #installation #content-wrapper #content-block1,
+  #installation #content-wrapper #content-block2 {
+    flex-direction: column;
+  }
+}
+@media (min-width: 0px) and (max-width: 649px) {
+  #installation #content-wrapper #content-block1,
+  #installation #content-wrapper #content-block2 {
+    flex-direction: column;
+  }
+}
+
+#block-madewithlovebyqed42 {
+  margin: 0px;
+  background: #fbfcff;
+  text-align: right;
+}
+
+#block-madewithlovebyqed42 p {
+  margin-right: 135px;
+}
+
+#footer_info {
+  background: black;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 150px 0px 10px;
+}
+
+#footer-logo img {
+  padding-left: 180px;
+}
+#footer-logo p {
+  color: white;
+  display: initial;
+}
+
+#footer-content p {
+  color: white;
+}
+#footer-content img {
+  margin-right: -20px;
+  margin-left: 30px;
 }

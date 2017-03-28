@@ -1,6 +1,7 @@
 #block-joinusmakethisanawesomeexperience {
     text-align: center;
 }
+
 #camp-block1 {
     h2 {
         width: initial;
@@ -10,6 +11,16 @@
         color: #0074bd;
         padding-left: 50px;
         padding-top: 20px;
+        @include breakpoint($mobile) {
+            font-size: 23px;
+            padding-bottom: 30px;
+            padding-top: 35px;
+        }
+        @include breakpoint($iphone5) {
+            font-size: 20px;
+            padding-bottom: 20px;
+            padding-top: 30px;
+        }
     }
     p {
         width: 40%;
@@ -19,6 +30,7 @@
         color: grey;
     }
 }
+
 #camp-block2 {
     display: flex;
     justify-content: center;
@@ -39,8 +51,26 @@
         width: 380px;
         padding-right: 35px;
     }
-
+    @include breakpoint($tablet) {
+        width: 50%;
+        margin: 0 auto;
+    }
+    @include breakpoint($mobile-2) {
+        width: 100%;
+        margin: 0 auto;
+    }
+    @include breakpoint($mobile) {
+        display:flex;
+        flex-direction:column;
+        padding: 0px;
+        padding-top: 10px;
+    }
+    @include breakpoint($iphone5) {
+        padding: 0px;
+        padding-top: 10px;
+    }
 }
+
 #block-codeofconduct {
     display: flex;
     flex-wrap: wrap;
@@ -59,8 +89,19 @@
         font-size: 16px;
         text-decoration: none;
         margin-top: 30px;
+        @include breakpoint($mobile) {
+            width: 110px;
+            padding: 18px;
+            font-size: 14px;
+        }
+        @include breakpoint($iphone5) {
+            width: 100px;
+            font-size: 12px;
+            padding: 16px;
+        }
     }
 }
+
 #installation {
     background-color: #f7f9fb;
     margin-top: 45px;
@@ -70,7 +111,8 @@
         width: 65%;
         margin: 0 auto;
         padding: 20px;
-        #content-block1, #content-block2 {
+        #content-block1,
+        #content-block2 {
             color: grey;
             padding: 20px;
             h4 {
@@ -85,6 +127,12 @@
                 background-color: white;
                 padding: 30px;
                 box-shadow: 2px 2px 2px;
+            }
+            @include breakpoint($tablet) {
+                flex-direction: column;
+            }
+            @include breakpoint($mobile-2) {
+                flex-direction: column;
             }
         }
     }
