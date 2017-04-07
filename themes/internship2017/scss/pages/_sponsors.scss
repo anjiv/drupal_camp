@@ -32,4 +32,8 @@
     #sponsors-content3 {
         width: 30%;
     }
+    @include breakpoint($mobile){
+      flex-direction:column;
+      justify-content:center;
+    }
 }

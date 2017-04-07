@@ -10,18 +10,53 @@
         padding-left: 50px;
         padding-top: 10px;
         padding-bottom: 80px;
+        @include breakpoint($mobile) {
+            font-size: 24px;
+            padding-bottom: 10px;
+            padding-top: 30px;
+        }
+        @include breakpoint($tablet) {
+            font-size: 20px;
+            padding-bottom: 10px;
+            padding-top: 30px;
+        }
     }
     #venue-info {
         display: flex;
         justify-content: center;
-    }
-    #venue-image {
-        padding-left: 250px;
-        margin-top: -80px;
-    }
-    #venue-content {
-        padding-left: 50px;
-        margin-top: -50px;
+        #venue-image {
+            padding-left: 250px;
+            margin-top: -80px;
+            @include breakpoint($tablet) {
+                padding-left: 100px;
+            }
+            @include breakpoint($mobile) {
+                padding: 60px;
+            }
+        }
+        #venue-content {
+            padding-left: 200px;
+            margin-top: -220px;
+            @include breakpoint($mobile) {
+                width: 100%;
+            }
+            @include breakpoint($mobile) {
+                padding-left: 0px;
+                margin-top: 0px;
+                width: 100%;
+            }
+        }
+        button {
+            background-color: white;
+            border-color: white;
+            box-shadow: 2px 1px 0px;
+        }
+        @include breakpoint($tablet) {
+            flex-direction: column-reverse;
+        }
+        @include breakpoint($mobile) {
+            flex-direction: column-reverse;
+        }
     }
 }
 

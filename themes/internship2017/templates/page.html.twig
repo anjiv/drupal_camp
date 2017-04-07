@@ -38,7 +38,7 @@
 <div class='page-wrapper'>
   <div class='header'>
     <div class='header-wrapper'>
-      {{page.header}}
+      {{ page.header }}
     </div>
     {% if page.header_bottom %}
         <div id="header-bottom">
@@ -48,7 +48,7 @@
   </div>
   <div class='content'>
     <div class='main-content'>
-      {{page.content}}
+      {{ page.content }}
     </div>
     {% if page.content_bottom %}
         <div id="content-bottom">
@@ -57,13 +57,14 @@
     {% endif %}
   </div>
   <div class='footer-wrapper'>
-  {%if page.footer_top %}
-    <div class='footer-top'>
-      {{page.footer_top}}
+    {% if page.footer_top %}
+      <div class='footer-top'>
+        {{ page.footer_top }}
+      </div>
+    {% endif %}
+    <div class='footer'>
+      {{ page.footer }}
     </div>
-  {% endif %}
-  <div class='footer'>
-    {{page.footer}}
   </div>
 </div>
 

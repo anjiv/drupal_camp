@@ -1,0 +1,25 @@
+uuid: 63645646-06c9-47e5-ab77-175a6799275e
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:a4298b35-231a-46f6-9d30-f36801fad014'
+  module:
+    - block_content
+  theme:
+    - internship2017
+id: footer
+theme: internship2017
+region: footer
+weight: 0
+provider: null
+plugin: 'block_content:a4298b35-231a-46f6-9d30-f36801fad014'
+settings:
+  id: 'block_content:a4298b35-231a-46f6-9d30-f36801fad014'
+  label: Footer
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

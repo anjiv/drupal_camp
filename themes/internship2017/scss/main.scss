@@ -1,15 +1,9 @@
 @import 'breakpoint';
 //$mobile: screen (max-width 320px);
-$mobile: 321px 640px;
-$iphone5:0px 320px;
-$ipad:930px;
-$ipad-1:750px 960px;
-$ipad-2:825px 999px;
-$tablet:639px 824px;
-$mobile-1:650px 749px;
-$mobile-2:0px 649px;
-$desktop: 1000px 1280px;
-$all:0px 1400px;
+$mobile : screen;
+$tablet : min-width 768px;
+$desktop : min-width 1024px;
+$widedesktop : min-width 1400px;
 
 @import 'components/header';
 @import 'pages/homepage';

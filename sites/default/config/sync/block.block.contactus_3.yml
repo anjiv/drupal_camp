@@ -1,0 +1,25 @@
+uuid: a525727b-7930-4104-a76a-792c53d7c4ef
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:6ead2764-8757-40d3-808b-dad43c185e46'
+  module:
+    - block_content
+  theme:
+    - internship2017
+id: contactus_3
+theme: internship2017
+region: header_top
+weight: 0
+provider: null
+plugin: 'block_content:6ead2764-8757-40d3-808b-dad43c185e46'
+settings:
+  id: 'block_content:6ead2764-8757-40d3-808b-dad43c185e46'
+  label: 'Contact Us'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

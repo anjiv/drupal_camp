@@ -1,0 +1,31 @@
+uuid: 37ada63c-9c20-44df-8626-848e24f76244
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:2bd82e23-c077-4c11-af16-45801d8f5c6c'
+  module:
+    - block_content
+    - system
+  theme:
+    - internship2017
+id: codeofconduct
+theme: internship2017
+region: content
+weight: -8
+provider: null
+plugin: 'block_content:2bd82e23-c077-4c11-af16-45801d8f5c6c'
+settings:
+  id: 'block_content:2bd82e23-c077-4c11-af16-45801d8f5c6c'
+  label: 'Code of Conduct'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /about
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,31 @@
+uuid: 52ac36f4-4031-4d9f-9838-9968f59910c3
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:e54ffdcb-06f4-4edc-b683-456a50d60f86'
+  module:
+    - block_content
+    - system
+  theme:
+    - internship2017
+id: venue_2
+theme: internship2017
+region: content_bottom
+weight: -13
+provider: null
+plugin: 'block_content:e54ffdcb-06f4-4edc-b683-456a50d60f86'
+settings:
+  id: 'block_content:e54ffdcb-06f4-4edc-b683-456a50d60f86'
+  label: Venue
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "<front>\r\n/about\r\n/session\r\n/sponsors\r\n/news"
+    negate: false
+    context_mapping: {  }

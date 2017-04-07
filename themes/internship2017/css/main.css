@@ -15,38 +15,28 @@
   width: 40%;
 }
 
-#ticket1 {
-  padding-top: 48px;
-  padding-left: 330px;
+#ticket {
+  display: flex;
+  justify-content: space-around;
 }
-
-#ticket2 {
-  padding-left: 360px;
-  padding-top: 18px;
-}
-
-#ticket2 a {
-  text-decoration: none;
-  padding: 15px 20px 15px 20px;
-  background-color: #e00000;
+#ticket a {
+  display: inline-block;
+  height: 5px;
+  line-height: 6px;
+  width: 140px;
+  background-color: #ec0342;
   color: white;
-}
-
-#ticket3 {
-  padding-left: 825px;
-  margin-top: -100px;
-}
-
-#ticket4 {
-  padding-left: 900px;
-  margin-top: 50px;
-}
-
-#ticket4 a {
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  font-size: 16px;
   text-decoration: none;
-  padding: 15px 20px 15px 20px;
-  background-color: #e00000;
-  color: white;
+}
+@media screen {
+  #ticket {
+    flex-direction: column;
+    text-align: center;
+  }
 }
 
 #wrapper {
@@ -55,6 +45,11 @@
   justify-content: center;
   background-color: #f7f9fb;
 }
+@media screen {
+  #wrapper {
+    flex-direction: column-reverse;
+  }
+}
 
 #keynote-speaker {
   font-size: 15px;
@@ -62,28 +57,20 @@
   color: grey;
   width: 55%;
 }
+@media screen {
+  #keynote-speaker {
+    width: 100%;
+  }
+}
 
 #keynote-content {
   width: 50%;
   padding-left: 200px;
   padding-top: 80px;
 }
-@media (min-width: 750px) and (max-width: 960px) {
+@media screen {
   #keynote-content {
-    width: 50%;
-    margin: 0 auto;
-  }
-}
-@media (min-width: 650px) and (max-width: 749px) {
-  #keynote-content {
-    width: 50%;
-    margin: 0 auto;
-  }
-}
-@media (min-width: 0px) and (max-width: 649px) {
-  #keynote-content {
-    width: 50%;
-    margin: 0 auto;
+    padding-left: 100px;
   }
 }
 
@@ -101,13 +88,26 @@
   padding-top: 60px;
   padding-bottom: 60px;
 }
+@media screen {
+  #keynote-info {
+    padding-left: 100px;
+  }
+}
 
 #keynote-image {
   display: flex;
   flex-direction: row;
   justify-content: center;
   background-color: #f7f9fb;
-  width: 45%;
+  width: 50%;
+}
+@media screen {
+  #keynote-image {
+    width: 100%;
+  }
+  #keynote-image img {
+    width: 100%;
+  }
 }
 
 #event h1 {
@@ -119,8 +119,21 @@
 }
 #event #event-wrap {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   padding: 80px;
+}
+#event #event-wrap #wrap-content1,
+#event #event-wrap #wrap-content2,
+#event #event-wrap #wrap-content3 {
+  width: 30%;
+}
+@media screen {
+  #event #event-wrap #wrap-content1,
+  #event #event-wrap #wrap-content2,
+  #event #event-wrap #wrap-content3 {
+    width: 100%;
+    height: auto;
+  }
 }
 #event #event-wrap h2 {
   text-transform: uppercase;
@@ -135,8 +148,13 @@
 }
 #event #event-wrap img {
   height: 250px;
-  width: 380px;
+  width: 100%;
   padding-right: 50px;
+}
+@media screen {
+  #event #event-wrap {
+    flex-direction: column;
+  }
 }
 
 #block-views-block-our-sponsors-block-1 {
@@ -210,17 +228,68 @@
   padding-top: 10px;
   padding-bottom: 80px;
 }
+@media screen {
+  #venue-block h2 {
+    font-size: 24px;
+    padding-bottom: 10px;
+    padding-top: 30px;
+  }
+}
+@media (min-width: 768px) {
+  #venue-block h2 {
+    font-size: 20px;
+    padding-bottom: 10px;
+    padding-top: 30px;
+  }
+}
 #venue-block #venue-info {
   display: flex;
   justify-content: center;
 }
-#venue-block #venue-image {
+#venue-block #venue-info #venue-image {
   padding-left: 250px;
   margin-top: -80px;
 }
-#venue-block #venue-content {
-  padding-left: 50px;
-  margin-top: -50px;
+@media (min-width: 768px) {
+  #venue-block #venue-info #venue-image {
+    padding-left: 100px;
+  }
+}
+@media screen {
+  #venue-block #venue-info #venue-image {
+    padding: 60px;
+  }
+}
+#venue-block #venue-info #venue-content {
+  padding-left: 200px;
+  margin-top: -220px;
+}
+@media screen {
+  #venue-block #venue-info #venue-content {
+    width: 100%;
+  }
+}
+@media screen {
+  #venue-block #venue-info #venue-content {
+    padding-left: 0px;
+    margin-top: 0px;
+    width: 100%;
+  }
+}
+#venue-block #venue-info button {
+  background-color: white;
+  border-color: white;
+  box-shadow: 2px 1px 0px;
+}
+@media (min-width: 768px) {
+  #venue-block #venue-info {
+    flex-direction: column-reverse;
+  }
+}
+@media screen {
+  #venue-block #venue-info {
+    flex-direction: column-reverse;
+  }
 }
 
 #contact-block {
@@ -296,6 +365,12 @@
 #sponsors #sponsors-content3 {
   width: 30%;
 }
+@media screen {
+  #sponsors {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
 
 #block-internship2017-sessionbanner h1 {
   letter-spacing: 6px;
@@ -339,14 +414,14 @@
   padding-left: 50px;
   padding-top: 20px;
 }
-@media (min-width: 321px) and (max-width: 640px) {
+@media screen {
   #block-internship2017-content h1 {
     font-size: 20px;
     padding-bottom: 30px;
     padding-top: 10px;
   }
 }
-@media (min-width: 0px) and (max-width: 320px) {
+@media (min-width: 768px) {
   #block-internship2017-content h1 {
     font-size: 18px;
     padding-bottom: 20px;
@@ -432,6 +507,13 @@
   width: 1440px;
   height: 500px;
 }
+@media screen {
+  .image-style-banner {
+    margin-top: 0px;
+    width: 360px;
+    height: auto;
+  }
+}
 
 #block-joinusmakethisanawesomeexperience {
   text-align: center;
@@ -446,18 +528,11 @@
   padding-left: 50px;
   padding-top: 20px;
 }
-@media (min-width: 321px) and (max-width: 640px) {
+@media screen {
   #camp-block1 h2 {
     font-size: 23px;
     padding-bottom: 30px;
     padding-top: 35px;
-  }
-}
-@media (min-width: 0px) and (max-width: 320px) {
-  #camp-block1 h2 {
-    font-size: 20px;
-    padding-bottom: 20px;
-    padding-top: 30px;
   }
 }
 #camp-block1 p {
@@ -489,19 +564,7 @@
   width: 380px;
   padding-right: 35px;
 }
-@media (min-width: 639px) and (max-width: 824px) {
-  #camp-block2 {
-    width: 50%;
-    margin: 0 auto;
-  }
-}
-@media (min-width: 0px) and (max-width: 649px) {
-  #camp-block2 {
-    width: 100%;
-    margin: 0 auto;
-  }
-}
-@media (min-width: 321px) and (max-width: 640px) {
+@media screen {
   #camp-block2 {
     display: flex;
     flex-direction: column;
@@ -509,10 +572,10 @@
     padding-top: 10px;
   }
 }
-@media (min-width: 0px) and (max-width: 320px) {
+@media (min-width: 768px) {
   #camp-block2 {
-    padding: 0px;
-    padding-top: 10px;
+    width: 50%;
+    margin: 0 auto;
   }
 }
 
@@ -536,18 +599,11 @@
   text-decoration: none;
   margin-top: 30px;
 }
-@media (min-width: 321px) and (max-width: 640px) {
+@media screen {
   #block-codeofconduct a {
     width: 110px;
     padding: 18px;
     font-size: 14px;
-  }
-}
-@media (min-width: 0px) and (max-width: 320px) {
-  #block-codeofconduct a {
-    width: 100px;
-    font-size: 12px;
-    padding: 16px;
   }
 }
 
@@ -582,13 +638,13 @@
   padding: 30px;
   box-shadow: 2px 2px 2px;
 }
-@media (min-width: 639px) and (max-width: 824px) {
+@media screen {
   #installation #content-wrapper #content-block1,
   #installation #content-wrapper #content-block2 {
     flex-direction: column;
   }
 }
-@media (min-width: 0px) and (max-width: 649px) {
+@media (min-width: 768px) {
   #installation #content-wrapper #content-block1,
   #installation #content-wrapper #content-block2 {
     flex-direction: column;

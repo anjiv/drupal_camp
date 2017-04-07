@@ -1,0 +1,25 @@
+uuid: c5e3111b-3dc0-40e8-8e05-f495f7d6c94f
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:1cde1e5e-86bc-4a88-b075-d83c283c4029'
+  module:
+    - block_content
+  theme:
+    - internship2017
+id: madewithlovebyqed42
+theme: internship2017
+region: footer_top
+weight: 0
+provider: null
+plugin: 'block_content:1cde1e5e-86bc-4a88-b075-d83c283c4029'
+settings:
+  id: 'block_content:1cde1e5e-86bc-4a88-b075-d83c283c4029'
+  label: 'Made with love by QED42'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

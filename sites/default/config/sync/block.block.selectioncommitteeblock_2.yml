@@ -1,0 +1,31 @@
+uuid: 66f55a04-d160-49f8-ad9a-92d3835e377f
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:884618a5-48f5-44ca-9b94-5390aa0ab05c'
+  module:
+    - block_content
+    - system
+  theme:
+    - internship2017
+id: selectioncommitteeblock_2
+theme: internship2017
+region: content
+weight: -5
+provider: null
+plugin: 'block_content:884618a5-48f5-44ca-9b94-5390aa0ab05c'
+settings:
+  id: 'block_content:884618a5-48f5-44ca-9b94-5390aa0ab05c'
+  label: 'selection committee block'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /session
+    negate: false
+    context_mapping: {  }
