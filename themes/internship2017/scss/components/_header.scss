@@ -1,17 +1,118 @@
-.header li {
-    display: inline;
-    text-transform: uppercase;
+.hamburger-menu{
+  @include breakpoint($mobile){
+    position: relative;
+    width: 26px;
+    height: 24px;
+    padding-left: 1.25em;
+    cursor: pointer;
+    opacity: 0.7;
+  }
+  @include breakpoint($tablet){
+    display: none;
+  }
+  &:hover{
+    opacity: 1;
+  }
+  &:before{
+    @include breakpoint($mobile){
+      content: "";
+      position: absolute;
+      left: 4px;
+      top: 0.4em;
+      width: 1em;
+      height: 0.15em;
+      background: red;
+      box-shadow:
+      0 0.25em 0 0 red,
+      0 0.5em 0 0 red;
+    }
+  }
 }
+#block-internship2017-main-menu{
+  .menu{
+    @include breakpoint($mobile){
+      position: fixed;
+      top : 0;
+      left: -300px;
+      width: 300px;
+      height: 100%;
+      z-index: 10;
+      background: white;
+      margin: 0;
+      padding-top: 40px;
+      transition: 0.3s left cubic-bezier(0,0,0,0.4);
+    }
+    @include breakpoint($tablet){
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      max-width: 960px;
+      margin: 0 auto;
+      margin-bottom: -50px;
+      height: auto;
+      left: 0;
+      width: auto;
+      background-color: transparent;
+      padding-top: 0;
+    }
+    &.active{
+      @include breakpoint($mobile){
+        left: 0;
+      }
+    }
+    li{
+      @include breakpoint($mobile){
+        display: block;
+        text-transform: uppercase;
+        margin: 20px 0;
+      }
+      @include breakpoint($tablet){
+        display: inline;
+        margin: 10px;
+        flex-grow: 1;
+        text-align: center;
+        padding-bottom: 16px;
+      }
+      &.active,
+      &.is-active{
+        border-bottom: 4px solid red;
+      }
+      &#logopath{
+        @include breakpoint($mobile){
+          display: none;
+          padding-bottom: 0;
+        }
+        @include breakpoint($tablet){
+          display: inline;
+        }
+      }
 
-.header li a {
-    color: black;
-    margin-left: 80px;
-    text-decoration: none;
+      &.hamburger-close{
+        @include breakpoint($mobile){
+          display: block;
+          position: relative;
+          left: 265px;
+        }
+        @include breakpoint($tablet){
+          display: none;
+        }
+      }
+      a{
+        @include breakpoint($mobile){
+          color: black;
+          margin-left: 0;
+          text-decoration: none;
+        }
+        &.is-active{
+          @include breakpoint($mobile){
+            border-bottom: 3px solid red;
+            border-width: 3px;
+            width: 40%;
+          }
+        }
+      }
+    }
+  }
 }
-
-.header li a.is-active{
-    border-bottom: 3px solid red;
-    border-width: 3px;
-    width: 40%;
-}
-

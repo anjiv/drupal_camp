@@ -1,39 +1,79 @@
 #sponsors {
-    h2 {
-        text-transform: uppercase;
-        text-align: center;
-        font-size: 30px;
-        color: #0074bd;
-        padding-left: 50px;
-        padding-top: 20px;
-    }
-    #sponsors-info {
-        display: flex;
-        justify-content: space-around;
-        padding: 0px 50px;
-        color: grey;
-        p {
-            text-transform: uppercase;
-            color: black;
-            padding-bottom: 20px;
-            line-height: 20px;
-            color: grey;
-        }
-        p:first-child {
-            font-size: 18px;
-            font-weight: 800;
-            border-bottom: 2px solid black;
-            padding: 20px 0px;
-            color: black;
-        }
-    }
-    #sponsors-content1,
-    #sponsors-content2,
-    #sponsors-content3 {
-        width: 30%;
-    }
+  @include breakpoint($mobile){
+    flex-direction:column;
+    justify-content:center;
+  }
+  h2 {
     @include breakpoint($mobile){
-      flex-direction:column;
-      justify-content:center;
+      text-transform: uppercase;
+      text-align: center;
+      font-size: 22px;
+      color: #0074bd;
+      padding-left: 10px;
+      padding-top: 20px;
     }
+    @include breakpoint($desktop){
+      text-transform: uppercase;
+      text-align: center;
+      font-size: 30px;
+      color: #0074bd;
+      padding-left: 50px;
+      padding-top: 20px;
+    }
+  }
+  #sponsors-info {
+    @include breakpoint($mobile){
+      display: flex;
+      justify-content: space-around;
+      flex-direction:row;
+      color: grey;
+    }
+    @include breakpoint($desktop){
+      display: flex;
+      justify-content: space-around;
+      padding: 0px 50px;
+      color: grey;
+    }
+    p {
+      @include breakpoint($mobile){
+        color: black;
+        padding-bottom: 20px;
+        line-height: 20px;
+        color: grey;
+      }
+      @include breakpoint($desktop){
+        color: black;
+        padding-bottom: 20px;
+        line-height: 20px;
+        color: grey;
+      }
+    }
+    p:first-child {
+      @include breakpoint($mobile){
+        text-transform:uppercase;
+        font-size: 18px;
+        font-weight: 800;
+        border-bottom: 2px solid black;
+        padding: 20px 0px 15px 0px;
+        color: black;
+      }
+    }
+  }
+  #sponsors-content1,
+  #sponsors-content2,
+  #sponsors-content3 {
+    width: 30%;
+  }
+  #sponsors-content1,
+  #sponsors-content3{
+    @include breakpoint($mobile){
+      padding-top:40px;
+    }
+    @include breakpoint($tablet){
+      padding-top:20px;
+    }
+    @include breakpoint($widedesktop){
+      padding-top:0px;
+    }
+  }
 }

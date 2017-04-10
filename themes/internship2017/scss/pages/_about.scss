@@ -1,121 +1,160 @@
 #block-joinusmakethisanawesomeexperience {
-    text-align: center;
+  text-align: center;
 }
-
 #camp-block1 {
-    h2 {
-        width: initial;
-        text-transform: uppercase;
-        text-align: center;
-        font-size: 25px;
-        color: #0074bd;
-        padding-left: 50px;
-        padding-top: 20px;
-        @include breakpoint($mobile) {
-            font-size: 23px;
-            padding-bottom: 30px;
-            padding-top: 35px;
-        }
+  h2 {
+    @include breakpoint($mobile) {
+      width: initial;
+      text-transform: uppercase;
+      text-align: center;
+      color: #0074bd;
+      font-size: 18px;
+      padding-bottom: 30px;
+      padding-top: 35px;
     }
-    p {
-        width: 40%;
-        margin: 0 auto;
-        text-align: center;
-        line-height: 20px;
-        color: grey;
+    @include breakpoint($tablet){
+      font-size: 20px;
     }
+    @include breakpoint($desktop){
+      font-size: 25px;
+      padding-left: 50px;
+      padding-top: 20px;
+    }
+  }
+  p {
+    width: 40%;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 20px;
+    color: grey;
+  }
 }
-
 #camp-block2 {
+  h2 {
+    @include breakpoint($mobile){
+      font-size: 14px;
+      color: #0074bd;
+      text-transform: uppercase;
+    }
+    @include breakpoint($desktop){
+      text-transform: uppercase;
+      padding-top: 30px;
+      font-size: 20px;
+      color: #0074bd;
+    }
+  }
+  p {
+    @include breakpoint($mobile){
+      color: grey;
+    }
+    @include breakpoint($desktop){
+      padding-top: 20px;
+      padding-right: 15px;
+      color: grey;
+    }
+  }
+  img {
+    @include breakpoint($mobile){
+      width:100%
+    }
+    @include breakpoint($desktop){
+      height: 250px;
+      width: 210px;
+      padding-right: 25px;
+    }
+    @include breakpoint($widedesktop){
+      height: 250px;
+      width: 380px;
+      padding-right: 35px;
+    }
+  }
+  @include breakpoint($mobile) {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    padding-top: 10px;
+  }
+  @include breakpoint($tablet) {
+    width: 50%;
+    margin: 0 auto;
+  }
+  @include breakpoint($desktop){
+    display: flex;
+    justify-content: center;
+    padding: 80px 217px 20px 250px;
+    flex-direction:row;
+  }
+  @include breakpoint($widedesktop){
     display: flex;
     justify-content: center;
     padding: 80px;
-    h2 {
-        text-transform: uppercase;
-        padding-top: 30px;
-        font-size: 20px;
-        color: #0074bd;
-    }
-    p {
-        padding-top: 20px;
-        padding-right: 15px;
-        color: grey;
-    }
-    img {
-        height: 250px;
-        width: 380px;
-        padding-right: 35px;
-    }
-    @include breakpoint($mobile) {
-        display: flex;
-        flex-direction: column;
-        padding: 0px;
-        padding-top: 10px;
-    }
-    @include breakpoint($tablet) {
-        width: 50%;
-        margin: 0 auto;
-    }
+    flex-direction:row;
+  }
 }
-
 #block-codeofconduct {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 20px auto;
-    a {
-        display: inline-block;
-        height: 5px;
-        line-height: 6px;
-        width: 80%;
-        background-color: #ec0342;
-        color: white;
-        border-radius: 5px;
-        padding: 17px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px auto;
+  a {
+    display: inline-block;
+    height: 5px;
+    line-height: 6px;
+    width: 80%;
+    background-color: #ec0342;
+    color: white;
+    border-radius: 5px;
+    padding: 17px;
+    text-align: center;
+    font-size: 16px;
+    text-decoration: none;
+    margin-top: 30px;
+    @include breakpoint($mobile) {
+      width: 110px;
+      padding: 18px;
+      font-size: 14px;
+    }
+  }
+}
+#installation {
+  background-color: #f7f9fb;
+  margin-top: 45px;
+  #content-wrapper {
+    @include breakpoint($mobile){
+      flex-direction: column;
+      width: 65%;
+      margin: 0 auto;
+    }
+    @include breakpoint($desktop){
+      display: flex;
+      flex-direction: row;
+      width: 65%;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    #content-block1,
+    #content-block2 {
+      color: grey;
+      padding: 20px;
+      h4 {
+        text-transform: uppercase;
         text-align: center;
         font-size: 16px;
-        text-decoration: none;
-        margin-top: 30px;
-        @include breakpoint($mobile) {
-            width: 110px;
-            padding: 18px;
-            font-size: 14px;
-        }
+        color: #0074bd;
+        height: 30px;
+        padding-bottom: 20px;
+      }
+      p {
+        background-color: white;
+        padding: 30px;
+        box-shadow: 2px 2px 2px;
+      }
+      @include breakpoint($mobile) {
+        flex-direction: column;
+      }
+      @include breakpoint($tablet) {
+        flex-direction: column;
+      }
     }
-}
-
-#installation {
-    background-color: #f7f9fb;
-    margin-top: 45px;
-    #content-wrapper {
-        display: flex;
-        flex-direction: row;
-        width: 65%;
-        margin: 0 auto;
-        padding: 20px;
-        #content-block1,
-        #content-block2 {
-            color: grey;
-            padding: 20px;
-            h4 {
-                text-transform: uppercase;
-                text-align: center;
-                font-size: 16px;
-                color: #0074bd;
-                height: 30px;
-                padding-bottom: 20px;
-            }
-            p {
-                background-color: white;
-                padding: 30px;
-                box-shadow: 2px 2px 2px;
-            }
-            @include breakpoint($mobile) {
-                flex-direction: column;
-            }
-            @include breakpoint($tablet) {
-                flex-direction: column;
-            }
-        }
-    }
+  }
 }

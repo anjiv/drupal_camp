@@ -1,14 +1,21 @@
 .align-center {
+  width: 100%;
+  height: auto;
+}
+.image-style-banner {
+  @include breakpoint($mobile) {
+    margin-top: 0px;
+    width: 100%;
+    height: auto;
+  }
+  @include breakpoint($tablet){
+    margin-top: 0px;
+    width: 100%;
+    height: auto;
+  }
+  @include breakpoint($desktop){
     width: 100%;
     height: 500px;
+  }
 }
 
-.image-style-banner {
-    width: 1440px;
-    height: 500px;
-    @include breakpoint($mobile) {
-        margin-top: 0px;
-        width: 360px;
-        height: auto;
-    }
-}

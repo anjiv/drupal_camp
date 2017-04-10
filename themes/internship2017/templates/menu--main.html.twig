@@ -34,6 +34,7 @@
     {% else %}
       <ul class="menu">
     {% endif %}
+    <li class="hamburger-close"><div>x</div></li>
     {% for item in items %}
       {%
         set classes = [
@@ -58,3 +59,6 @@
     </ul>
   {% endif %}
 {% endmacro %}
+ {# Adding hamburger menu html for mobile representation  #}
+
+ <div class="hamburger-menu"></div>

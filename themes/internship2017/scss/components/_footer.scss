@@ -1,38 +1,101 @@
 #block-madewithlovebyqed42 {
-    margin: 0px;
+  @include breakpoint($mobile){
     background: #fbfcff;
     text-align: right;
+  }
+  @include breakpoint($tablet){
+    background: #fbfcff;
+    text-align: right;
+  }
 }
-
 #block-madewithlovebyqed42 {
-    p {
-        margin-right: 135px;
+  p {
+    @include breakpoint($mobile){
+      background: #fbfcff;
+      text-align: right;
+      margin: 15px 18px 15px 0px;
     }
+    @include breakpoint($tablet){
+      background: #fbfcff;
+      text-align: right;
+      margin:0px;
+    }
+    @include breakpoint($desktop){
+      margin: 0px;
+      background: #fbfcff;
+      text-align: right;
+      margin: 0px 135px 20px 0px;
+    }
+  }
 }
-
 #footer_info {
+  @include breakpoint($mobile){
+    background: black;
+    display: flex;
+    justify-content: space-between;
+  }
+  @include breakpoint($tablet){
+    background: black;
+    display: flex;
+    justify-content: space-between;
+  }
+  @include breakpoint($desktop){
     background: black;
     display: flex;
     justify-content: space-between;
     padding: 0px 150px 0px 10px;
+  }
 }
-
 #footer-logo {
-    img {
-        padding-left: 180px;
+  img {
+    @include breakpoint($mobile){
+      padding-left:20px;
     }
-    p {
-        color: white;
-        display: initial;
+    @include breakpoint($tablet){
+      padding-left:40px;
     }
+    @include breakpoint($desktop){
+      padding-left: 180px;
+    }
+  }
+  p {
+    @include breakpoint($mobile){
+     color: white;
+     display: initial;
+     padding-left:125px;
+   }
+   @include breakpoint($tablet){
+    color: white;
+    display: initial;
+    padding-left: 20px;
+  }
+  @include breakpoint($desktop){
+    color: white;
+    display: initial;
+  }
 }
-
+}
 #footer-content {
-    p {
-        color: white;
+  p {
+    @include breakpoint($mobile){
+      color: white;
+      padding-left:10px;
     }
-    img {
-        margin-right: -20px;
-        margin-left: 30px;
+    @include breakpoint($tablet){
+      color: white;
     }
+  }
+  img {
+    @include breakpoint($mobile){
+      margin: 10px 17px 34px -10px;
+    }
+    @include breakpoint($tablet){
+      margin: 17px 12px -2px 7px;
+    }
+    @include breakpoint($desktop){
+      margin-right: -20px;
+      margin-left: 30px;
+      margin-bottom: 0px;
+    }
+  }
 }

@@ -1,178 +1,274 @@
 #ticket {
+  a {
+    @include breakpoint($mobile){
+      display: inline-block;
+      height: 5px;
+      line-height: 6px;
+      width: 140px;
+      background-color: #ec0342;
+      color: white;
+      border-radius: 5px;
+      padding: 20px;
+      text-align: center;
+      font-size: 12px;
+      text-decoration: none;
+    }
+    @include breakpoint($tablet){
+      display: inline-block;
+      height: 5px;
+      line-height: 6px;
+      width: 140px;
+      background-color: #ec0342;
+      color: white;
+      border-radius: 5px;
+      padding: 20px;
+      text-align: center;
+      font-size: 14px;
+      text-decoration: none;
+    }
+    @include breakpoint($desktop){
+      display: inline-block;
+      height: 5px;
+      line-height: 6px;
+      width: 140px;
+      background-color: #ec0342;
+      color: white;
+      border-radius: 5px;
+      padding: 20px;
+      text-align: center;
+      font-size: 16px;
+      text-decoration: none;
+    }
+  }
+  @include breakpoint($mobile) {
+    flex-direction: column;
+    text-align: center;
+  }
+  @include breakpoint($tablet){
     display: flex;
     justify-content: space-around;
-    a {
-        display: inline-block;
-        height: 5px;
-        line-height: 6px;
-        width: 140px;
-        background-color: #ec0342;
-        color: white;
-        border-radius: 5px;
-        padding: 20px;
-        text-align: center;
-        font-size: 16px;
-        text-decoration: none;
-    }
-    @include breakpoint($mobile) {
-        flex-direction: column;
-        text-align: center;
-    }
-}
-
-#wrapper {
+    flex-direction:row;
+    padding-top:35px;
+    padding-bottom:40px;
+  }
+  @include breakpoint($desktop){
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background-color: #f7f9fb;
-    @include breakpoint($mobile) {
-        flex-direction: column-reverse;
-    }
+    justify-content: space-around;
+    flex-direction:row;
+    padding-top:35px;
+    padding-bottom:40px;
+  }
 }
-
+#wrapper {
+  @include breakpoint($mobile) {
+   background-color: #f7f9fb;
+   display: flex;
+   flex-direction: column-reverse;
+ }
+ @include breakpoint($tablet){
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   background-color: #f7f9fb;
+ }
+}
 #keynote-speaker {
+  @include breakpoint($mobile) {
+    width: 100%;
+    color: grey;
+  }
+  @include breakpoint($tablet){
+    font-size: 15px;
+    line-height: 20px;
+    color: grey;
+    width: 70%;
+  }
+  @include breakpoint($desktop){
     font-size: 15px;
     line-height: 20px;
     color: grey;
     width: 55%;
-    @include breakpoint($mobile) {
-        width: 100%;
-    }
+  }
 }
-
 #keynote-content {
+  @include breakpoint($mobile) {
+    padding-left: 50px;
+  }
+  @include breakpoint($tablet) {
+    width: 50%;
+    padding-left: 120px;
+    padding-top: 50px;
+  }
+  @include breakpoint($desktop){
     width: 50%;
     padding-left: 200px;
     padding-top: 80px;
-    @include breakpoint($mobile) {
-        padding-left: 100px;
-    }
+  }
 }
-
 #keynote-content h1 {
-    font-size: 22px;
-    color: #0074bd;
-    text-transform: uppercase;
-    font-weight: bold;
+  font-size: 22px;
+  color: #0074bd;
+  text-transform: uppercase;
+  font-weight: bold;
 }
-
 #keynote-info {
+  @include breakpoint($mobile) {
+    padding-left: 50px;
+  }
+  @include breakpoint($tablet){
+    width: 50%;
+    padding-left: 120px;
+    padding-top: 15px;
+    padding-bottom: 60px;
+  }
+  @include breakpoint($desktop){
     width: 50%;
     padding-left: 200px;
-    padding-top: 80px;
     padding-top: 60px;
     padding-bottom: 60px;
-    @include breakpoint($mobile) {
-        padding-left: 100px;
-    }
+  }
 }
-
 #keynote-image {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background-color: #f7f9fb;
-    width:50%;
-    @include breakpoint($mobile) {
-        width: 100%;
-        img {
-           width: 100%;
-        }
-    }
+  @include breakpoint($mobile) {
+    width: 100%;
+    img {
+     width: 100%;
+   }
+ }
+ @include breakpoint($tablet){
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #f7f9fb;
+  width:50%;
+  padding-top:35px;
 }
-
+@include breakpoint($desktop){
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #f7f9fb;
+  width:50%;
+}
+}
 #event {
-    h1 {
-        text-transform: uppercase;
-        text-align: center;
-        font-size: 30px;
-        color: #0074bd;
-        padding-top: 50px;
+  h1 {
+    @include breakpoint($mobile){
+      text-transform: uppercase;
+      text-align: center;
+      font-size: 25px;
+      color: #0074bd;
+      padding-top: 50px;
     }
-    #event-wrap {
-        display: flex;
-        justify-content: space-around;
-        padding: 80px;
-        #wrap-content1,
-        #wrap-content2,
-        #wrap-content3 {
-            width: 30%;
-            @include breakpoint($mobile) {
-                width: 100%;
-                height: auto;
-            }
-        }
-        h2 {
-            text-transform: uppercase;
-            padding-top: 30px;
-            font-size: 20px;
-            color: #0074bd;
-        }
-        p {
-            padding-top: 20px;
-            padding-right: 15px;
-            color: grey;
-        }
-        img {
-            height: 250px;
-            width: 100%;
-            padding-right: 50px;
-        }
-        @include breakpoint($mobile) {
-            flex-direction: column;
-        }
+    @include breakpoint($tablet){
+      text-transform: uppercase;
+      text-align: center;
+      font-size: 26px;
+      color: #0074bd;
+      padding-top: 50px;
     }
-}
-
-#block-views-block-our-sponsors-block-1 {
-    width: 80%;
-    margin: 0 auto;
-    h2 {
-        text-transform: uppercase;
-        text-align: center;
-        font-size: 30px;
-        color: #0074bd;
+    @include breakpoint($desktop){
+      text-transform: uppercase;
+      text-align: center;
+      font-size: 30px;
+      color: #0074bd;
+      padding-top: 50px;
     }
-    .view-content {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    .views-row {
+  }
+  #event-wrap {
+    #wrap-content1,
+    #wrap-content2,
+    #wrap-content3 {
+      @include breakpoint($mobile) {
+        width: 100%;
+        height: auto;
+      }
+      @include breakpoint($tablet){
         width: 30%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+      }
     }
-}
-
-#block {
-    padding-bottom: 50px;
     h2 {
-        text-align: center;
-        font-size: 20px;
-        color: grey;
-        padding-top: 25px;
-        padding-bottom: 25px;
+      text-transform: uppercase;
+      padding-top: 30px;
+      font-size: 20px;
+      color: #0074bd;
     }
-    #block-button {
-        text-align: center;
-        a {
-            display: inline-block;
-            height: 5px;
-            line-height: 6px;
-            width: 140px;
-            background-color: #ec0342;
-            color: white;
-            border-radius: 5px;
-            padding: 20px;
-            text-align: center;
-            font-size: 16px;
-            text-decoration: none;
-        }
+    p {
+      padding-top: 20px;
+      padding-right: 15px;
+      color: grey;
     }
+    img {
+      height: 250px;
+      width: 100%;
+    }
+    @include breakpoint($mobile) {
+      flex-direction: column;
+      padding: 10px 15px 10px 20px;
+    }
+    @include breakpoint($tablet){
+      display: flex;
+      justify-content: space-around;
+      padding: 80px;
+      flex-direction:row;
+    }
+  }
 }
-
-#block-helpusmakethisanawesomeexperience {
+#block-views-block-our-sponsors-block-1 {
+  width: 80%;
+  margin: 0 auto;
+  h2 {
+    text-transform: uppercase;
     text-align: center;
+    font-size: 30px;
+    color: #0074bd;
+  }
+  .view-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .views-row {
+    @include breakpoint($mobile){
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    @include breakpoint($tablet){
+      width: 50%;
+    }
+    @include breakpoint($desktop){
+      width: 30%;
+    }
+  }
+}
+#block {
+  padding-bottom: 50px;
+  h2 {
+    text-align: center;
+    font-size: 20px;
+    color: grey;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  #block-button {
+    text-align: center;
+    a {
+      display: inline-block;
+      height: 5px;
+      line-height: 6px;
+      width: 140px;
+      background-color: #ec0342;
+      color: white;
+      border-radius: 5px;
+      padding: 20px;
+      text-align: center;
+      font-size: 16px;
+      text-decoration: none;
+    }
+  }
+}
+#block-helpusmakethisanawesomeexperience {
+  text-align: center;
 }
