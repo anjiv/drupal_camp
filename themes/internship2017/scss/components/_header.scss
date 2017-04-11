@@ -1,11 +1,10 @@
 .hamburger-menu{
   @include breakpoint($mobile){
     position: relative;
-    width: 26px;
-    height: 24px;
     padding-left: 1.25em;
     cursor: pointer;
     opacity: 0.7;
+    height:50px;
   }
   @include breakpoint($tablet){
     display: none;
@@ -27,6 +26,21 @@
       0 0.5em 0 0 red;
     }
   }
+}
+.hamburger-logo{
+  @include breakpoint($mobile){
+    float: right;
+    width: 100px;
+  }
+  @include breakpoint($tablet){
+    display:none;
+  }
+  img{
+    @include breakpoint($mobile){
+     width:100%;
+     height:auto;
+   }
+ }
 }
 #block-internship2017-main-menu{
   .menu{
@@ -94,6 +108,7 @@
           display: block;
           position: relative;
           left: 265px;
+          cursor:pointer;
         }
         @include breakpoint($tablet){
           display: none;
